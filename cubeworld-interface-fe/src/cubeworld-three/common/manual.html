@@ -1,0 +1,312 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.msochpdefault, li.msochpdefault, div.msochpdefault
+	{mso-style-name:msochpdefault;
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";}
+p.msopapdefault, li.msopapdefault, div.msopapdefault
+	{mso-style-name:msopapdefault;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+.MsoChpDefault
+	{font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EL link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><b><span style='color:#31859C'>Οδηγίες για τους
+εκπαιδευτικούς</span></b></p>
+
+<p class=MsoNormal>Η ιδέα προήλθε από το<span lang=EN-US> Freudenthal Institute
+for Science and Mathematics Education ( </span><a
+href="http://www.fisme.science.uu.nl/toepassingen/00724/"><span lang=EN-US>http://www.fisme.science.uu.nl/toepassingen/00724/</span></a><span
+lang=EN-US> ). </span>Στηρίχθηκε σε αποτελέσματα έρευνας του <a
+href="http://etl.ppp.uoa.gr/">Εργαστηρίου Εκπαιδευτικής Τεχνολογίας</a> ( <span
+style='color:black;background:white'>Τομέας Παιδαγωγικής, Φ.Π.Ψ., Φιλοσοφική
+Σχολή, Ε.Κ.Π.Α.</span> ) και αναπτύχθηκε με την καθοδήγηση του καθηγητή Χρόνη
+Κυνηγού. Η βοήθεια των συναδέλφων Μαρίας Λάτση και Βαγγέλη Φακούδη ήταν
+πολύτιμη. Κατέθεσαν ιδέες, συμμετείχαν στην απολαθοποίηση (<span lang=EN-US>debugging</span>)
+και γενικά βελτίωσαν την λειτουργικότητα και την αισθητική της εφαρμογής.</p>
+
+<p class=MsoNormal>Η εφαρμογή αναπτύχθηκε σε <span lang=EN-US>JavaScript</span>
+/ <span lang=EN-US>html</span>5 και στηρίζεται στο <span lang=EN-US>WebGL</span>
+(<a href="http://www.khronos.org/">http://www.khronos.org/</a> ), το οποίο
+είναι ένα <span lang=EN-US>JavaScript API </span>του <span lang=EN-US>OpenGL ES</span>
+2.0 για το <span lang=EN-US>web</span>. Ειδικότερα, χρησιμοποιήθηκε το <span
+lang=EN-US>framework </span><a href="http://threejs.org/">http://threejs.org/</a>
+που πρόσφατα έγινε πολύ δημοφιλές. Οι επιλογές του λογισμικού βασίστηκαν σε
+τρεις βασικούς άξονες:</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Οι εξελίξεις στην τεχνολογία λογισμικού και οι τάσεις της αγοράς.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Απλή τεχνολογία <span lang=EN-US>web</span>, χωρίς την ανάγκη
+βοηθητικών πρόσθετων εφαρμογών ( <span lang=EN-US>addons</span> ).</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Ελεύθερο ή/και λογισμικό ανοικτού κώδικα.</p>
+
+<p class=MsoNormal>Δόθηκε βαρύτητα ώστε οι εκπαιδευτικοί να αποκτήσουν ένα
+εργαλείο ανάπτυξης μικροπειραμάτων για την κατανόηση του χώρου.</p>
+
+<p class=MsoNormal>Υπάρχουν αρκετές δυνατότητες παραμετροποίησης της εφαρμογής.
+Αν τις χρησιμοποιήσετε μπορείτε εύκολα να δημιουργήσετε το δικό σας
+μικροπείραμα και να το αναρτήσετε στο διαδίκτυο.</p>
+
+<p class=MsoNormal>Στον φάκελο <span lang=EN-US style='font-family:"Courier New"'>js</span>
+υπάρχει ένα αρχείο <span lang=EN-US style='font-family:"Courier New"'>model</span><span
+style='font-family:"Courier New"'>.</span><span lang=EN-US style='font-family:
+"Courier New"'>js</span>. Μπορείτε να το ανοίξετε με οποιονδήποτε <span
+lang=EN-US>text editor</span>, όπως το <span lang=EN-US>notepad </span>των <span
+lang=EN-US>windows</span>, για να κάνετε αλλαγές.</p>
+
+<p class=MsoNormal>Μετά το σχόλιο <span lang=EN-US style='font-family:"Courier New"'>TEXT
+DATA</span> υπάρχουν 3 μεταβλητές: <span lang=EN-US style='font-family:"Courier New"'>titleText</span>,
+<span lang=EN-US style='font-family:"Courier New"'>problemText</span><span
+lang=EN-US> </span>και <span lang=EN-US style='font-family:"Courier New"'>authorText</span>.
+Αυτές περιέχουν το κείμενο για τον τίτλο του μικροπειράματος (πάνω μέρος
+παραθύρου), την περιγραφή της προτεινόμενης δραστηριότητας (κάτω αριστερό
+μέρος) και το όνομά σας (κάτω μέρος). Ο τίτλος πρέπει να περιέχει το πολύ 120
+χαρακτήρες, η περιγραφή το πολύ 500 και το όνομα το πολύ 70.</p>
+
+<p class=MsoNormal>Ακολουθεί το σχόλιο <span lang=EN-US style='font-family:
+"Courier New"'>COLOR</span>, μετά το οποίο υπάρχει ο πίνακας χρωμάτων <span
+lang=EN-US style='font-family:"Courier New"'>colors</span> και η μεταβλητή <span
+lang=EN-US style='font-family:"Courier New"'>wireFrame</span>. Στον πίνακα
+μπορείτε να καθορίσετε την παλέτα των 9 χρωμάτων που χρησιμοποιούνται από την
+εφαρμογή. Ο πίνακας περιέχει 10 στοιχεία. Το πρώτο, που έχει δείκτη 0, είναι
+δεσμευμένο. Τα υπόλοιπα, που έχουν δείκτες από 1 μέχρι 9, μπορείτε να τα
+αλλάξετε. Οι τιμές για τα χρώματα είναι στο δεκαεξαδικό σύστημα αρίθμησης και αυτό
+δηλώνεται από το πρόθεμα <span style='font-family:"Courier New"'>0</span><span
+lang=EN-US style='font-family:"Courier New"'>x</span>. Η μεταβλητή <span
+lang=EN-US style='font-family:"Courier New"'>wireFrame</span> καθορίζει την
+εμφάνιση ή μη των λευκών ακμών στους κύβους. Όταν έχει τιμή <span lang=EN-US
+style='font-family:"Courier New"'>true</span><span lang=EN-US> </span>εμφανίζονται,
+διαφορετικά πρέπει να έχει τιμή <span lang=EN-US style='font-family:"Courier New"'>false</span>.</p>
+
+<p class=MsoNormal>Μετά το σχόλιο <span lang=EN-US style='font-family:"Courier New"'>DIMENSIONING</span><span
+lang=EN-US> </span>υπάρχει η μεταβλητή <span lang=EN-US style='font-family:
+"Courier New"'>gridDimension</span>. Αυτή πρέπει να είναι άρτιο πολλαπλάσιο του
+50 που είναι η ακμή των κύβων (αυτό δεν πρέπει να αλλάζει). Αν για παράδειγμα
+θέσετε την τιμή 400, τότε θα έχετε ένα πλέγμα 8 <span lang=EN-US>x</span> 8.</p>
+
+<p class=MsoNormal>Στη συνέχεια και κάτω από το σχόλιο <span lang=EN-US
+style='font-family:"Courier New"'>COUNTERS</span>, υπάρχουν 4 μεταβλητές που
+καθορίζουν την εμφάνιση ή μη των δεικτών πλήθους των κύβων.</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Courier New"'>init</span><span
+style='font-family:"Courier New"'>_</span><span lang=EN-US style='font-family:
+"Courier New"'>show</span><span style='font-family:"Courier New"'>  = </span><span
+lang=EN-US style='font-family:"Courier New"'>true</span><span style='font-family:
+"Courier New"'>;</span>           // πλήθος κύβων που υπάρχουν στον
+«μισοψημένο» καμβά από τον εκπαιδευτικό</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Courier New"'>usr</span><span
+style='font-family:"Courier New"'>_</span><span lang=EN-US style='font-family:
+"Courier New"'>show</span><span style='font-family:"Courier New"'>   = </span><span
+lang=EN-US style='font-family:"Courier New"'>true</span><span style='font-family:
+"Courier New"'>;</span>           // πλήθος κύβων που πρόσθεσε ο μαθητής</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Courier New"'>rare</span><span
+style='font-family:"Courier New"'>_</span><span lang=EN-US style='font-family:
+"Courier New"'>show</span><span style='font-family:"Courier New"'>  = </span><span
+lang=EN-US style='font-family:"Courier New"'>true</span><span style='font-family:
+"Courier New"'>;</span>           // πλήθος κύβων που διέγραψε ο μαθητής από
+αυτούς που υπήρχαν στον αρχικό καμβά</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Courier New"'>tot</span><span
+style='font-family:"Courier New"'>_</span><span lang=EN-US style='font-family:
+"Courier New"'>show</span><span style='font-family:"Courier New"'>   = </span><span
+lang=EN-US style='font-family:"Courier New"'>true</span>;             // τρέχον
+σύνολο κύβων</p>
+
+<p class=MsoNormal>Μετά το σχόλιο <span lang=EN-US style='font-family:"Courier New"'>CAMERAS</span><span
+lang=EN-US> </span>υπάρχουν<span lang=EN-US> 4 </span>μεταβλητές<span
+lang=EN-US>: </span><span lang=EN-US style='font-family:"Courier New"'>planeView</span><span
+lang=EN-US>, </span><span lang=EN-US style='font-family:"Courier New"'>redView</span><span
+lang=EN-US>, </span><span lang=EN-US style='font-family:"Courier New"'>blueView</span><span
+lang=EN-US> </span>και <span lang=EN-US style='font-family:"Courier New"'>greenView</span><span
+lang=EN-US>. </span>Οι τιμές τους είναι <span lang=EN-US style='font-family:
+"Courier New"'>true</span><span lang=EN-US> </span>ή <span lang=EN-US
+style='font-family:"Courier New"'>false</span><span lang=EN-US> </span>και
+καθορίζουν εάν θα «δουλεύουν» ή όχι οι κάμερες για την κάτοψη και τις 3 όψεις.</p>
+
+<p class=MsoNormal>Μετά το σχόλιο <span lang=EN-US style='font-family:"Courier New"'>MODEL
+DATA</span> υπάρχει η μεταβλητή <span lang=EN-US style='font-family:"Courier New"'>modelGeometry</span>.
+Αυτή είναι ένας πίνακας 3 διαστάσεων και τηρεί δεδομένα για το μοντέλο, δηλαδή
+την κατασκευή που εμφανίζεται στις όψεις. Η τιμή 0 αντιστοιχεί σε κενό χώρο και
+οι τιμές 1 έως 9 σε κύβο αντίστοιχου χρώματος. Η διάταξη του πίνακα είναι
+ορισμένη ως εξής: γραμμή, στήλη, πύργος. Δηλαδή, το πρώτο σετ τιμών αντιστοιχεί
+στον πύργο της πρώτης γραμμής και πρώτης στήλης. Για παράδειγμα, αν έχετε καμβά
+2 <span lang=EN-US>x </span>2 τότε μια πιθανή κατασκευή θα ήταν η εξής:</p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Courier New"'>modelGeometry</span><span
+style='font-family:"Courier New"'> =</span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New"'>[</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='font-family:"Courier New"'> [</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='font-family:"Courier New"'> [<span style='color:red'>1</span>,<span
+style='color:red'>0</span>],</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='font-family:"Courier New"'> [<span style='color:red'>0</span>,<span
+style='color:red'>0</span>]</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='font-family:"Courier New"'> ],</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='font-family:"Courier New"'> [</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='font-family:"Courier New"'> [<span style='color:red'>0</span>,<span
+style='color:red'>1</span>],</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='font-family:"Courier New"'>[<span style='color:red'>2</span>,<span
+style='color:red'>2</span>]</span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;
+]</span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New"'>];</span></p>
+
+<p class=MsoNormal>Έχω χρωματίσει κόκκινες τις τιμές που πρέπει να επεξεργαστείτε.
+Οι αγκύλες, τα κόμματα και το ερωτηματικό στο τέλος είναι μέρος της σύνταξης
+στην <span lang=EN-US>javascript</span>.</p>
+
+<p class=MsoNormal>Ακολουθεί η μεταβλητή <span lang=EN-US style='font-family:
+"Courier New"'>canvasGeometry</span>, κάτω από το σχόλιο <span lang=EN-US
+style='font-family:"Courier New"'>CANVAS DATA</span>, που αφορά τυχόν
+«μισοψημένη» (ημιτελή) κατασκευή στον καμβά. Η λογική της επεξεργασίας του
+πίνακα είναι πανομοιότυπη με αυτήν για τον <span lang=EN-US style='font-family:
+"Courier New"'>modelGeometry</span>. Αυτήν τη μεταβλητή μπορείτε να την
+χρησιμοποιήσετε στις περιπτώσεις κατά τις οποίες θέλετε οι μαθητές σας να
+ολοκληρώσουν κάτι.</p>
+
+<p class=MsoNormal>Με λίγο πειραματισμό θα καταλάβετε πως δουλεύει. Σε οποιαδήποτε
+περίπτωση μην διστάσετε να μου απευθύνετε ερωτήσεις μέσω <span lang=EN-US>e</span>-<span
+lang=EN-US>mail</span>.</p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal>Θωμάς Παπαδόπουλος</p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Courier New"'>thomas</span><span
+style='font-family:"Courier New"'></span><span lang=EN-US style='font-family:
+"Courier New"'>d</span><span style='font-family:"Courier New"'></span><span
+lang=EN-US style='font-family:"Courier New"'>papadopoulos</span><span
+style='font-family:"Courier New"'>@</span><span lang=EN-US style='font-family:
+"Courier New"'>gmail</span><span style='font-family:"Courier New"'></span><span
+lang=EN-US style='font-family:"Courier New"'>com</span></p>
+
+<p class=MsoNormal> 2018 Update by Marianthi Grizioti</p>
+
+<p class=MsoNormal> mgriziot@ppp.uoa.gr </p>
+
+</div>
+
+</body>
+
+</html>

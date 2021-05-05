@@ -1,0 +1,62 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+	<head>
+		<title>Κυβόκοσμος</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+
+			body {
+				font-family: Monospace;
+				background-color: #f0f0f0;
+				margin: 0px;
+				overflow: hidden;
+			}
+
+			table {
+				background-color:white;
+				border: solid black 1px;
+				width: auto;
+				height: auto;
+				border-collapse:collapse;
+			}
+
+			td {
+				background-color:white;
+				border: solid black 1px;
+				width: 15px;
+				height: 15px;
+				text-align: center;
+				vertical-align:middle;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-o-user-select: none;
+				user-select: none;
+			}
+
+			.line {
+				position: relative;
+				display: inline-block;
+				height: 3px;
+				width: 180px;
+				background-color: #00f;
+				vertical-align: middle;
+				margin-bottom: 5px;
+			}
+
+			#oldie { background-color: #ddd !important }
+		</style>
+	</head>
+	<body>
+		<script src = "js/three.min.js"></script>
+		<script src = "js/OrbitCamera.js"></script>
+		<script src = "js/voxel_canvas.js"></script>
+		<script src = "js/main.js"></script>
+		<script src = "js/model.js"></script>
+		<script type="text/javascript">
+			init();
+			animate();
+		</script>
+	</body>
+</html>
